@@ -1,0 +1,10 @@
+E:\repos\PAEngenharia\PA\PA\bin\Debug\PA.exe.config
+E:\repos\PAEngenharia\PA\PA\bin\Debug\PA.exe
+E:\repos\PAEngenharia\PA\PA\bin\Debug\PA.pdb
+E:\repos\PAEngenharia\PA\PA\obj\Debug\PA.csproj.AssemblyReference.cache
+E:\repos\PAEngenharia\PA\PA\obj\Debug\PA.csproj.SuggestedBindingRedirects.cache
+E:\repos\PAEngenharia\PA\PA\obj\Debug\PA.Properties.Resources.resources
+E:\repos\PAEngenharia\PA\PA\obj\Debug\PA.csproj.GenerateResource.cache
+E:\repos\PAEngenharia\PA\PA\obj\Debug\PA.csproj.CoreCompileInputs.cache
+E:\repos\PAEngenharia\PA\PA\obj\Debug\PA.exe
+E:\repos\PAEngenharia\PA\PA\obj\Debug\PA.pdb
