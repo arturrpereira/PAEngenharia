@@ -16,5 +16,10 @@ namespace PA.View
         {
             InitializeComponent();
         }
+
+        private void CargoView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

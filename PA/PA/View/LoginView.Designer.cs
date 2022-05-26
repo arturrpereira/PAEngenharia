@@ -31,10 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginView));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txb_usuario = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txb_senha = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_logar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,6 +43,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(198, 148);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 44);
@@ -52,35 +54,37 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(165, 214);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(165, 241);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Usuário:";
             // 
-            // textBox1
+            // txb_usuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(171, 258);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 20);
-            this.textBox1.TabIndex = 3;
+            this.txb_usuario.Location = new System.Drawing.Point(171, 296);
+            this.txb_usuario.Name = "txb_usuario";
+            this.txb_usuario.Size = new System.Drawing.Size(161, 20);
+            this.txb_usuario.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(165, 281);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(165, 334);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 32);
             this.label3.TabIndex = 4;
             this.label3.Text = "Senha:";
             // 
-            // textBox2
+            // txb_senha
             // 
-            this.textBox2.Location = new System.Drawing.Point(171, 327);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(161, 20);
-            this.textBox2.TabIndex = 5;
+            this.txb_senha.Location = new System.Drawing.Point(171, 384);
+            this.txb_senha.Name = "txb_senha";
+            this.txb_senha.Size = new System.Drawing.Size(161, 20);
+            this.txb_senha.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -92,14 +96,25 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // btn_logar
+            // 
+            this.btn_logar.Location = new System.Drawing.Point(206, 432);
+            this.btn_logar.Name = "btn_logar";
+            this.btn_logar.Size = new System.Drawing.Size(106, 26);
+            this.btn_logar.TabIndex = 6;
+            this.btn_logar.Text = "Salvar";
+            this.btn_logar.UseVisualStyleBackColor = true;
+            // 
             // LoginView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 377);
-            this.Controls.Add(this.textBox2);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(511, 479);
+            this.Controls.Add(this.btn_logar);
+            this.Controls.Add(this.txb_senha);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txb_usuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -114,9 +129,10 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txb_usuario;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txb_senha;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_logar;
     }
 }

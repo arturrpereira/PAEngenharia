@@ -19,3 +19,4 @@ C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\obj\Debug\PA.csproj.Generat
 C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\obj\Debug\PA.csproj.CoreCompileInputs.cache
 C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\obj\Debug\PA.exe
 C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\obj\Debug\PA.pdb
+C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\obj\Debug\PA.View.CargoView.resources
