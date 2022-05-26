@@ -8,3 +8,14 @@ E:\repos\PAEngenharia\PA\PA\obj\Debug\PA.csproj.GenerateResource.cache
 E:\repos\PAEngenharia\PA\PA\obj\Debug\PA.csproj.CoreCompileInputs.cache
 E:\repos\PAEngenharia\PA\PA\obj\Debug\PA.exe
 E:\repos\PAEngenharia\PA\PA\obj\Debug\PA.pdb
+C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\bin\Debug\PA.exe.config
+C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\bin\Debug\PA.exe
+C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\bin\Debug\PA.pdb
+C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\obj\Debug\PA.csproj.AssemblyReference.cache
+C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\obj\Debug\PA.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\obj\Debug\PA.Properties.Resources.resources
+C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\obj\Debug\PA.View.LoginView.resources
+C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\obj\Debug\PA.csproj.GenerateResource.cache
+C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\obj\Debug\PA.csproj.CoreCompileInputs.cache
+C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\obj\Debug\PA.exe
+C:\Users\Lucas Carmo\source\repos\PAEngenharia\PA\PA\obj\Debug\PA.pdb
