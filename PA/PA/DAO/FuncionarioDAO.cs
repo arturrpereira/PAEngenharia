@@ -20,56 +20,68 @@ namespace PA.DAO
         {
             NpgsqlCommand command = new NpgsqlCommand();
             command.CommandType = System.Data.CommandType.Text;
-            command.CommandText = "INSERT INTO Funcionario (desc_cargo, salario_cargo, nivel_cargo) " +
-                                             "VALUES (@desc_cargo, @salario_cargo, @nivel_cargo)";
+            command.CommandText = "INSERT INTO Funcionario (nome_funcionario, rg_funcionario, cpf_funcionario, endereco_funcionario, dataAdmissao_funcionario, dataNasc_funcionario, genero_funcionario, telefone_funcionario, fk_id_cargo) " +
+                                                   "VALUES (@nome_funcionario, @rg_funcionario, @cpf_funcionario, @endereco_funcionario, @dataAdmissao_funcionario, @dataNasc_funcionario, @genero_funcionario, @telefone_funcionario, @fk_id_cargo)";
 
-            command.Parameters.AddWithValue("@desc_cargo", model.desc_cargo);
-            command.Parameters.AddWithValue("@salario_cargo", model.salario_cargo);
-            command.Parameters.AddWithValue("@nivel_cargo", model.nivel_cargo);
+            command.Parameters.AddWithValue("@nome_funcionario", model.nome_funcionario);
+            command.Parameters.AddWithValue("@rg_funcionario", model.rg_funcionario);
+            command.Parameters.AddWithValue("@cpf_funcionario", model.cpf_funcionario);
+            command.Parameters.AddWithValue("@endereco_funcionario", model.endereco_funcionario);
+            command.Parameters.AddWithValue("@dataAdmissao_funcionario", model.dataAdmissao_funcionario);
+            command.Parameters.AddWithValue("@dataNasc_funcionario", model.dataNasc_funcionario);
+            command.Parameters.AddWithValue("@genero_funcionario", model.genero_funcionario);
+            command.Parameters.AddWithValue("@telefone_funcionario", model.telefone_funcionario);
+            command.Parameters.AddWithValue("@fk_id_cargo", model.fk_id_cargo);
           
             ConnectionDB.CRUD(command);
         }
 
-        public void update(CargoModel model)
+        public void update(FuncionarioModel model)
         { 
             NpgsqlCommand command = new NpgsqlCommand();
             command.CommandType = System.Data.CommandType.Text;
-            command.CommandText = "UPDATE Cargo SET desc_cargo=@desc_cargo, salario_cargo=@salario_cargo, nivel_cargo=@nivel_cargo WHERE id_cargo=@id_cargo";
+            command.CommandText = "UPDATE Funcionario SET nome_funcionario=@nome_funcionario, rg_funcionario=@rg_funcionario, cpf_funcionario=@cpf_funcionario, endereco_funcionario=@endereco_funcionario, dataAdmissao_funcionario=@dataAdmissao_funcionario, dataNasc_funcionario=@dataNasc_funcionario, genero_funcionario=@genero_funcionario, telefone_funcionario=@telefone_funcionario, fk_id_cargo=@fk_id_cargo WHERE id_funcionario=@id_funcionario";
 
-            command.Parameters.AddWithValue("@desc_cargo", model.desc_cargo);
-            command.Parameters.AddWithValue("@salario_cargo", model.salario_cargo);
-            command.Parameters.AddWithValue("@nivel_cargo", model.nivel_cargo);
-            command.Parameters.AddWithValue("@id_cargo", model.id_cargo);
-            
+            command.Parameters.AddWithValue("@id_funcionario", model.id_funcionario);
+            command.Parameters.AddWithValue("@nome_funcionario", model.nome_funcionario);
+            command.Parameters.AddWithValue("@rg_funcionario", model.rg_funcionario);
+            command.Parameters.AddWithValue("@cpf_funcionario", model.cpf_funcionario);
+            command.Parameters.AddWithValue("@endereco_funcionario", model.endereco_funcionario);
+            command.Parameters.AddWithValue("@dataAdmissao_funcionario", model.dataAdmissao_funcionario);
+            command.Parameters.AddWithValue("@dataNasc_funcionario", model.dataNasc_funcionario);
+            command.Parameters.AddWithValue("@genero_funcionario", model.genero_funcionario);
+            command.Parameters.AddWithValue("@telefone_funcionario", model.telefone_funcionario);
+            command.Parameters.AddWithValue("@fk_id_cargo", model.fk_id_cargo);
+          
             ConnectionDB.CRUD(command);
         }
         
 
-        public void select(CargoModel model)
+        public void select(FuncionarioModel model)
         {
             NpgsqlCommand command = new NpgsqlCommand();
             command.CommandType = System.Data.CommandType.Text;
-            command.CommandText = "SELECT * FROM Cargo";
+            command.CommandText = "SELECT * FROM Funcionario";
         }
 
-        public void selectById(PetModel model)
+        public void selectById(FuncionarioModel model)
         {
             NpgsqlCommand command = new NpgsqlCommand();
             command.CommandType = System.Data.CommandType.Text;
-            command.CommandText = "SELECT * FROM Cargo WHERE id_cargo=@id_cargo";
+            command.CommandText = "SELECT * FROM Funcionario WHERE id_funcionario=@id_funcionario";
 
-            command.Parameters.AddWithValue("@id_cargo", model.id_cargo);
+            command.Parameters.AddWithValue("@id_funcionario", model.id_funcionario);
           
             ConnectionDB.CRUD(command);
         }
 
-        public void delete(CargoModel model)
+        public void delete(FuncionarioModel model)
         {
             NpgsqlCommand command = new NpgsqlCommand();
             command.CommandType = System.Data.CommandType.Text;
-            command.CommandText = "DELETE FROM Cargo WHERE id_cargo=@id_cargo";
+            command.CommandText = "DELETE FROM Funcionario WHERE id_funcionario=@id_funcionario";
 
-            command.Parameters.AddWithValue("@id_cargo", model.id_cargo);
+            command.Parameters.AddWithValue("@id_funcionario", model.id_funcionario);
           
             ConnectionDB.CRUD(command);
         }
