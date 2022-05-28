@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "cU4PmcHLOrPIn37GnO6l2voO1wiEDSLinddoXA8c1NbBWkEhTtpPPN46rdj5nvpGYnp3RuQaY7a9ZRpVUJLL6g==",
   "success": true,
   "projectFilePath": "E:\\repos\\PAEngenharia\\PA\\PA\\PA.csproj",
@@ -8,4 +9,18 @@
     "C:\\Users\\artuh\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
+=======
+  "dgSpecHash": "rJrZwDuDhpwrfO+SDX1gNFQJcUBXISzDLaNNQc6H0UsMfVKvfUTL+93ApP5D5OsP6EsOL7QBs7kgSlMSSvTX1w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\felip\\OneDrive\\Documentos\\repos\\PAEngenharia\\PA\\PA\\PA.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\felip\\OneDrive\\Documentos\\repos\\PAEngenharia\\PA\\PA\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
+>>>>>>> c4b457f4f8111024f72d876cb4aeade5be11e86b
 }
