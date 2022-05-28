@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Faculdade\\repos\\PAEngenharia\\PA\\PA\\PA.csproj": {}
+    "E:\\repos\\PAEngenharia\\PA\\PA\\PA.csproj": {}
   },
   "projects": {
-    "E:\\Faculdade\\repos\\PAEngenharia\\PA\\PA\\PA.csproj": {
+    "E:\\repos\\PAEngenharia\\PA\\PA\\PA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Faculdade\\repos\\PAEngenharia\\PA\\PA\\PA.csproj",
+        "projectUniqueName": "E:\\repos\\PAEngenharia\\PA\\PA\\PA.csproj",
         "projectName": "PA",
-        "projectPath": "E:\\Faculdade\\repos\\PAEngenharia\\PA\\PA\\PA.csproj",
+        "projectPath": "E:\\repos\\PAEngenharia\\PA\\PA\\PA.csproj",
         "packagesPath": "C:\\Users\\artuh\\.nuget\\packages\\",
-        "outputPath": "E:\\Faculdade\\repos\\PAEngenharia\\PA\\PA\\obj\\",
+        "outputPath": "E:\\repos\\PAEngenharia\\PA\\PA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
