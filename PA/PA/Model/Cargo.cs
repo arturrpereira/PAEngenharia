@@ -18,14 +18,17 @@ namespace PA.Model
         {
             CargoDAO dao = new CargoDAO();
 
-            if (this.id_cargo == null)
+            dao.insert(this);
+
+
+           /* if (this.id_cargo == null)
             {
                 dao.insert(this);
             }
             else
             {
                 //dao.update(this);
-            }
+            }*/
         }
     }
 }

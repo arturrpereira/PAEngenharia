@@ -35,12 +35,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.data_admissao_funcionario = new System.Windows.Forms.MaskedTextBox();
+            this.txb_dataAdmissao_funcionario = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.labelRua = new System.Windows.Forms.Label();
-            this.txb_rua_funcionario = new System.Windows.Forms.TextBox();
+            this.txb_endereco_funcionario = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.labelnumero = new System.Windows.Forms.Label();
-            this.nrm_numero_endereco = new System.Windows.Forms.NumericUpDown();
+            this.nmr_numero_endereco = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
@@ -63,20 +63,17 @@
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.data_nascimento_funcionario = new System.Windows.Forms.MaskedTextBox();
-            this.numerotel_funcionario = new System.Windows.Forms.MaskedTextBox();
+            this.txb_dataNasc_funcionario = new System.Windows.Forms.MaskedTextBox();
+            this.txb_telefone_funcionario = new System.Windows.Forms.MaskedTextBox();
             this.enviar_funcionario = new System.Windows.Forms.Button();
             this.txb_genero_funcionario = new System.Windows.Forms.ComboBox();
             this.limpar_funcionario = new System.Windows.Forms.Button();
-<<<<<<< HEAD
-            this.txb_rg_funcionario = new System.Windows.Forms.TextBox();
-            this.txb_cpf_funcionario = new System.Windows.Forms.TextBox();
-=======
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
->>>>>>> c4b457f4f8111024f72d876cb4aeade5be11e86b
+            this.txb_rg_funcionario = new System.Windows.Forms.TextBox();
+            this.nmr_id_cargo = new System.Windows.Forms.NumericUpDown();
+            this.txb_cpf_funcionario = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -89,7 +86,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nrm_numero_endereco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmr_numero_endereco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
@@ -100,6 +97,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmr_id_cargo)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNome
@@ -121,7 +119,7 @@
             this.txb_nome_funcionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txb_nome_funcionario.Name = "txb_nome_funcionario";
             this.txb_nome_funcionario.Size = new System.Drawing.Size(275, 16);
-            this.txb_nome_funcionario.TabIndex = 34;
+            this.txb_nome_funcionario.TabIndex = 1;
             this.txb_nome_funcionario.TextChanged += new System.EventHandler(this.textBoxNome_TextChanged);
             // 
             // pictureBox7
@@ -179,17 +177,17 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // data_admissao_funcionario
+            // txb_dataAdmissao_funcionario
             // 
-            this.data_admissao_funcionario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.data_admissao_funcionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.data_admissao_funcionario.Location = new System.Drawing.Point(539, 42);
-            this.data_admissao_funcionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.data_admissao_funcionario.Mask = "00/00/0000";
-            this.data_admissao_funcionario.Name = "data_admissao_funcionario";
-            this.data_admissao_funcionario.Size = new System.Drawing.Size(149, 16);
-            this.data_admissao_funcionario.TabIndex = 47;
-            this.data_admissao_funcionario.ValidatingType = typeof(System.DateTime);
+            this.txb_dataAdmissao_funcionario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txb_dataAdmissao_funcionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_dataAdmissao_funcionario.Location = new System.Drawing.Point(539, 42);
+            this.txb_dataAdmissao_funcionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txb_dataAdmissao_funcionario.Mask = "00/00/0000";
+            this.txb_dataAdmissao_funcionario.Name = "txb_dataAdmissao_funcionario";
+            this.txb_dataAdmissao_funcionario.Size = new System.Drawing.Size(149, 16);
+            this.txb_dataAdmissao_funcionario.TabIndex = 7;
+            this.txb_dataAdmissao_funcionario.ValidatingType = typeof(System.DateTime);
             // 
             // label3
             // 
@@ -235,14 +233,15 @@
             this.labelRua.TabIndex = 55;
             this.labelRua.Text = "Rua:";
             // 
-            // txb_rua_funcionario
+            // txb_endereco_funcionario
             // 
-            this.txb_rua_funcionario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txb_rua_funcionario.Location = new System.Drawing.Point(74, 212);
-            this.txb_rua_funcionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txb_rua_funcionario.Name = "txb_rua_funcionario";
-            this.txb_rua_funcionario.Size = new System.Drawing.Size(275, 16);
-            this.txb_rua_funcionario.TabIndex = 52;
+            this.txb_endereco_funcionario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txb_endereco_funcionario.Location = new System.Drawing.Point(74, 212);
+            this.txb_endereco_funcionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txb_endereco_funcionario.Name = "txb_endereco_funcionario";
+            this.txb_endereco_funcionario.Size = new System.Drawing.Size(275, 16);
+            this.txb_endereco_funcionario.TabIndex = 4;
+            this.txb_endereco_funcionario.TextChanged += new System.EventHandler(this.txb_endereco_funcionario_TextChanged);
             // 
             // pictureBox5
             // 
@@ -283,7 +282,7 @@
             this.txb_bairro_funcionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txb_bairro_funcionario.Name = "txb_bairro_funcionario";
             this.txb_bairro_funcionario.Size = new System.Drawing.Size(275, 16);
-            this.txb_bairro_funcionario.TabIndex = 60;
+            this.txb_bairro_funcionario.TabIndex = 6;
             // 
             // pictureBox11
             // 
@@ -337,15 +336,15 @@
             this.labelnumero.TabIndex = 59;
             this.labelnumero.Text = "Numero da Residencia:";
             // 
-            // nrm_numero_endereco
+            // nmr_numero_endereco
             // 
-            this.nrm_numero_endereco.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nrm_numero_endereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nrm_numero_endereco.Location = new System.Drawing.Point(73, 265);
-            this.nrm_numero_endereco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.nrm_numero_endereco.Name = "nrm_numero_endereco";
-            this.nrm_numero_endereco.Size = new System.Drawing.Size(275, 19);
-            this.nrm_numero_endereco.TabIndex = 64;
+            this.nmr_numero_endereco.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nmr_numero_endereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nmr_numero_endereco.Location = new System.Drawing.Point(73, 265);
+            this.nmr_numero_endereco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nmr_numero_endereco.Name = "nmr_numero_endereco";
+            this.nmr_numero_endereco.Size = new System.Drawing.Size(275, 19);
+            this.nmr_numero_endereco.TabIndex = 5;
             // 
             // label6
             // 
@@ -476,27 +475,27 @@
             this.pictureBox24.TabIndex = 71;
             this.pictureBox24.TabStop = false;
             // 
-            // data_nascimento_funcionario
+            // txb_dataNasc_funcionario
             // 
-            this.data_nascimento_funcionario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.data_nascimento_funcionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.data_nascimento_funcionario.Location = new System.Drawing.Point(540, 99);
-            this.data_nascimento_funcionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.data_nascimento_funcionario.Mask = "00/00/0000";
-            this.data_nascimento_funcionario.Name = "data_nascimento_funcionario";
-            this.data_nascimento_funcionario.Size = new System.Drawing.Size(149, 16);
-            this.data_nascimento_funcionario.TabIndex = 88;
-            this.data_nascimento_funcionario.ValidatingType = typeof(System.DateTime);
+            this.txb_dataNasc_funcionario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txb_dataNasc_funcionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_dataNasc_funcionario.Location = new System.Drawing.Point(540, 99);
+            this.txb_dataNasc_funcionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txb_dataNasc_funcionario.Mask = "00/00/0000";
+            this.txb_dataNasc_funcionario.Name = "txb_dataNasc_funcionario";
+            this.txb_dataNasc_funcionario.Size = new System.Drawing.Size(149, 16);
+            this.txb_dataNasc_funcionario.TabIndex = 8;
+            this.txb_dataNasc_funcionario.ValidatingType = typeof(System.DateTime);
             // 
-            // numerotel_funcionario
+            // txb_telefone_funcionario
             // 
-            this.numerotel_funcionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numerotel_funcionario.Location = new System.Drawing.Point(539, 151);
-            this.numerotel_funcionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numerotel_funcionario.Mask = "(99)00000-0000";
-            this.numerotel_funcionario.Name = "numerotel_funcionario";
-            this.numerotel_funcionario.Size = new System.Drawing.Size(171, 23);
-            this.numerotel_funcionario.TabIndex = 89;
+            this.txb_telefone_funcionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_telefone_funcionario.Location = new System.Drawing.Point(539, 151);
+            this.txb_telefone_funcionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txb_telefone_funcionario.Mask = "(99)00000-0000";
+            this.txb_telefone_funcionario.Name = "txb_telefone_funcionario";
+            this.txb_telefone_funcionario.Size = new System.Drawing.Size(171, 23);
+            this.txb_telefone_funcionario.TabIndex = 9;
             // 
             // enviar_funcionario
             // 
@@ -505,12 +504,8 @@
             this.enviar_funcionario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGreen;
             this.enviar_funcionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.enviar_funcionario.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.enviar_funcionario.Location = new System.Drawing.Point(579, 257);
+            this.enviar_funcionario.Location = new System.Drawing.Point(176, 362);
             this.enviar_funcionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
-            this.enviar_funcionario.Location = new System.Drawing.Point(201, 483);
->>>>>>> c4b457f4f8111024f72d876cb4aeade5be11e86b
             this.enviar_funcionario.Name = "enviar_funcionario";
             this.enviar_funcionario.Size = new System.Drawing.Size(180, 52);
             this.enviar_funcionario.TabIndex = 90;
@@ -529,7 +524,7 @@
             this.txb_genero_funcionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txb_genero_funcionario.Name = "txb_genero_funcionario";
             this.txb_genero_funcionario.Size = new System.Drawing.Size(232, 23);
-            this.txb_genero_funcionario.TabIndex = 91;
+            this.txb_genero_funcionario.TabIndex = 10;
             // 
             // limpar_funcionario
             // 
@@ -538,92 +533,83 @@
             this.limpar_funcionario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.limpar_funcionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.limpar_funcionario.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.limpar_funcionario.Location = new System.Drawing.Point(579, 325);
+            this.limpar_funcionario.Location = new System.Drawing.Point(540, 362);
             this.limpar_funcionario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
-            this.limpar_funcionario.Location = new System.Drawing.Point(617, 483);
->>>>>>> c4b457f4f8111024f72d876cb4aeade5be11e86b
             this.limpar_funcionario.Name = "limpar_funcionario";
             this.limpar_funcionario.Size = new System.Drawing.Size(180, 52);
             this.limpar_funcionario.TabIndex = 92;
             this.limpar_funcionario.Text = "Limpar";
             this.limpar_funcionario.UseVisualStyleBackColor = false;
             // 
-<<<<<<< HEAD
-            // txb_rg_funcionario
-            // 
-            this.txb_rg_funcionario.Location = new System.Drawing.Point(74, 92);
-            this.txb_rg_funcionario.Name = "txb_rg_funcionario";
-            this.txb_rg_funcionario.Size = new System.Drawing.Size(275, 23);
-            this.txb_rg_funcionario.TabIndex = 93;
-            // 
-            // txb_cpf_funcionario
-            // 
-            this.txb_cpf_funcionario.Location = new System.Drawing.Point(74, 151);
-            this.txb_cpf_funcionario.Name = "txb_cpf_funcionario";
-            this.txb_cpf_funcionario.Size = new System.Drawing.Size(275, 23);
-            this.txb_cpf_funcionario.TabIndex = 94;
-=======
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(617, 329);
+            this.label4.Location = new System.Drawing.Point(540, 247);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 19);
+            this.label4.Size = new System.Drawing.Size(76, 17);
             this.label4.TabIndex = 96;
             this.label4.Text = "ID Cargo:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(616, 358);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(314, 20);
-            this.textBox1.TabIndex = 93;
             // 
             // pictureBox13
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.White;
-            this.pictureBox13.Location = new System.Drawing.Point(608, 343);
+            this.pictureBox13.Location = new System.Drawing.Point(532, 257);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(341, 41);
+            this.pictureBox13.Size = new System.Drawing.Size(298, 31);
             this.pictureBox13.TabIndex = 94;
             this.pictureBox13.TabStop = false;
             // 
             // pictureBox14
             // 
             this.pictureBox14.BackColor = System.Drawing.Color.Black;
-            this.pictureBox14.Location = new System.Drawing.Point(600, 337);
+            this.pictureBox14.Location = new System.Drawing.Point(525, 253);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(357, 53);
+            this.pictureBox14.Size = new System.Drawing.Size(312, 40);
             this.pictureBox14.TabIndex = 95;
             this.pictureBox14.TabStop = false;
->>>>>>> c4b457f4f8111024f72d876cb4aeade5be11e86b
+            // 
+            // txb_rg_funcionario
+            // 
+            this.txb_rg_funcionario.Location = new System.Drawing.Point(74, 96);
+            this.txb_rg_funcionario.Name = "txb_rg_funcionario";
+            this.txb_rg_funcionario.Size = new System.Drawing.Size(274, 23);
+            this.txb_rg_funcionario.TabIndex = 2;
+            // 
+            // nmr_id_cargo
+            // 
+            this.nmr_id_cargo.Location = new System.Drawing.Point(540, 265);
+            this.nmr_id_cargo.Name = "nmr_id_cargo";
+            this.nmr_id_cargo.Size = new System.Drawing.Size(232, 23);
+            this.nmr_id_cargo.TabIndex = 11;
+            // 
+            // txb_cpf_funcionario
+            // 
+            this.txb_cpf_funcionario.Location = new System.Drawing.Point(74, 151);
+            this.txb_cpf_funcionario.Name = "txb_cpf_funcionario";
+            this.txb_cpf_funcionario.Size = new System.Drawing.Size(275, 23);
+            this.txb_cpf_funcionario.TabIndex = 3;
             // 
             // funcionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(903, 431);
             this.Controls.Add(this.txb_cpf_funcionario);
+            this.Controls.Add(this.nmr_id_cargo);
             this.Controls.Add(this.txb_rg_funcionario);
-=======
-            this.ClientSize = new System.Drawing.Size(1032, 575);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox14);
->>>>>>> c4b457f4f8111024f72d876cb4aeade5be11e86b
             this.Controls.Add(this.limpar_funcionario);
             this.Controls.Add(this.txb_genero_funcionario);
             this.Controls.Add(this.enviar_funcionario);
-            this.Controls.Add(this.numerotel_funcionario);
-            this.Controls.Add(this.data_nascimento_funcionario);
+            this.Controls.Add(this.txb_telefone_funcionario);
+            this.Controls.Add(this.txb_dataNasc_funcionario);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox18);
@@ -632,7 +618,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox23);
             this.Controls.Add(this.pictureBox24);
-            this.Controls.Add(this.nrm_numero_endereco);
+            this.Controls.Add(this.nmr_numero_endereco);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txb_bairro_funcionario);
             this.Controls.Add(this.pictureBox11);
@@ -641,13 +627,13 @@
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.labelRua);
-            this.Controls.Add(this.txb_rua_funcionario);
+            this.Controls.Add(this.txb_endereco_funcionario);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.data_admissao_funcionario);
+            this.Controls.Add(this.txb_dataAdmissao_funcionario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelNome);
             this.Controls.Add(this.txb_nome_funcionario);
@@ -675,7 +661,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nrm_numero_endereco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmr_numero_endereco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
@@ -686,6 +672,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmr_id_cargo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -700,12 +687,12 @@
         private Label label1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private MaskedTextBox data_admissao_funcionario;
+        private MaskedTextBox txb_dataAdmissao_funcionario;
         private Label label3;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private Label labelRua;
-        private TextBox txb_rua_funcionario;
+        private TextBox txb_endereco_funcionario;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private Label label2;
@@ -715,7 +702,7 @@
         private PictureBox pictureBox10;
         private PictureBox pictureBox9;
         private Label labelnumero;
-        private NumericUpDown nrm_numero_endereco;
+        private NumericUpDown nmr_numero_endereco;
         private Label label6;
         private PictureBox pictureBox17;
         private PictureBox pictureBox18;
@@ -728,19 +715,16 @@
         private PictureBox pictureBox22;
         private PictureBox pictureBox23;
         private PictureBox pictureBox24;
-        private MaskedTextBox data_nascimento_funcionario;
-        private MaskedTextBox numerotel_funcionario;
+        private MaskedTextBox txb_dataNasc_funcionario;
+        private MaskedTextBox txb_telefone_funcionario;
         private Button enviar_funcionario;
         private ComboBox txb_genero_funcionario;
         private Button limpar_funcionario;
-<<<<<<< HEAD
-        private TextBox txb_rg_funcionario;
-        private TextBox txb_cpf_funcionario;
-=======
         private Label label4;
-        private TextBox textBox1;
         private PictureBox pictureBox13;
         private PictureBox pictureBox14;
->>>>>>> c4b457f4f8111024f72d876cb4aeade5be11e86b
+        private TextBox txb_rg_funcionario;
+        private NumericUpDown nmr_id_cargo;
+        private TextBox txb_cpf_funcionario;
     }
 }

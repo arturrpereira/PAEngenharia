@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using PA.Model;
 using Npgsql;
+using PA.db;
 
 namespace PA.DAO
 {
@@ -17,11 +18,11 @@ namespace PA.DAO
             command.CommandText = "INSERT INTO Cargo (desc_cargo, salario_cargo, nivel_cargo) " +
                                              "VALUES (@desc_cargo, @salario_cargo, @nivel_cargo)";
 
-            //linha de dar o comando no banco
+            command.Parameters.AddWithValue("@desc_cargo", model.desc_cargo);
+            command.Parameters.AddWithValue("@salario_cargo", model.salario_cargo);
+            command.Parameters.AddWithValue("@nivel_cargo", model.nivel_cargo);
 
-            //receber os valores do controler
-
-            // executar a query
+            ConnectionDB.CRUD(command);
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PA.Model;
+using PA.Model;
 
 namespace PA.Controller
 {
@@ -28,7 +29,7 @@ namespace PA.Controller
             model.save();
         }
 
-        public int verifyUser(string login_usuario, string senha_usuario)
+        /* public int verifyUser(string login_usuario, string senha_usuario)
         {
             UsuarioModel model = new UsuarioModel();
 
@@ -38,6 +39,6 @@ namespace PA.Controller
             model.verifyUser();
 
             return model.verifyUser();
-        }
+        }*/ 
     }
 }

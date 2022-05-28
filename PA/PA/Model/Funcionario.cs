@@ -26,10 +26,12 @@ namespace PA.Model
         {
             FuncionarioDAO dao = new FuncionarioDAO();
 
-            if (this.id_funcionario == null)
+            dao.insert(this);
+
+            /* if (this.id_funcionario == null)
             {
                 dao.insert(this);
-            }
+            }*/
 
         }
     }
