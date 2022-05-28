@@ -10,11 +10,57 @@ using System.Windows.Forms;
 
 namespace PA.View
 {
-    public partial class IndexView : Form
+    public partial class p2 : Form
     {
-        public IndexView()
+        public p2()
         {
             InitializeComponent();
+        }
+
+        private void MenuVert_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMaxi_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnMaxi.Visible = false;
+            btnRes.Visible = true;
+        }
+
+        private void btnMini_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnRes_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnRes.Visible=false;
+            btnMaxi.Visible=true;
+        }
+        private void AbrirNOPrincipal(object form)
+        {
+            if (this.panel1.Controls.Count > 0)
+                this.panel1.Controls.RemoveAt(0);
+            Form principal = form as Form;
+            principal.TopLevel = false;
+            principal.Dock = DockStyle.Fill;
+            this.panel1.Controls.Add(principal);
+            this.panel1.Tag = principal;
+            principal.Show();
+
         }
     }
 }

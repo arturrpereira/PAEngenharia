@@ -120,6 +120,9 @@
     <EmbeddedResource Include="View\ClienteView.resx">
       <DependentUpon>ClienteView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\IndexView.resx">
+      <DependentUpon>IndexView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
