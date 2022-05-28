@@ -1,3 +1,4 @@
+using PA.View;
 namespace PA
 {
     internal static class Program
@@ -11,7 +12,7 @@ namespace PA
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new View.index());
+            Application.Run(new login());
         }
     }
 }

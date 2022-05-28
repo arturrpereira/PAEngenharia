@@ -67,10 +67,15 @@ namespace PA.View
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BarraServico_Paint(object sender, PaintEventArgs e)
         {
 
         }
