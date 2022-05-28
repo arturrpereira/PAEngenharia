@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PA.Controller
+namespace PA.Model
 {
-    internal class FuncionarioController
+    internal class Pedido
     {
     }
 }

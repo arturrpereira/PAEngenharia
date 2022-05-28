@@ -1,34 +1,24 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PA.Model;
 
 namespace PA.Controller
 {
-    public class PetController
+    public class CargoController
     {
-        public void save(string desc_time, string abreviacao_time)
+        public void save(string desc_cargo, double salario_cargo, int nivel_cargo)
         {
-            PetModel model = new TimeModel();
+            Cargo model = new Cargo();
 
-            model.Desc_time = desc_time;
-            model.Abreviacao_time = abreviacao_time;
+            model.desc_cargo = desc_cargo;
+            model.salario_cargo = salario_cargo;
+            model.nivel_cargo = nivel_cargo;
 
             model.save();
 
-        }
-
-        public int verifyUser(string login_usuario, string senha_usuario)
-        {
-            UsuarioModel model = new UsuarioModel();
-
-            model.Login_usuario = login_usuario;
-            model.Senha_usuario = senha_usuario;
-
-            model.verifyUser();
-
-            return model.verifyUser();
         }
     }
 }
