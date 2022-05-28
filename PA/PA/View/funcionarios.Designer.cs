@@ -70,6 +70,10 @@
             this.enviar_funcionario = new System.Windows.Forms.Button();
             this.genero_funcionario = new System.Windows.Forms.ComboBox();
             this.limpar_funcionario = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rg_funcionario)).BeginInit();
@@ -93,6 +97,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNome
@@ -490,7 +496,7 @@
             this.enviar_funcionario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGreen;
             this.enviar_funcionario.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.enviar_funcionario.ForeColor = System.Drawing.Color.White;
-            this.enviar_funcionario.Location = new System.Drawing.Point(662, 343);
+            this.enviar_funcionario.Location = new System.Drawing.Point(201, 483);
             this.enviar_funcionario.Name = "enviar_funcionario";
             this.enviar_funcionario.Size = new System.Drawing.Size(206, 69);
             this.enviar_funcionario.TabIndex = 90;
@@ -516,18 +522,60 @@
             this.limpar_funcionario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.limpar_funcionario.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.limpar_funcionario.ForeColor = System.Drawing.Color.White;
-            this.limpar_funcionario.Location = new System.Drawing.Point(662, 433);
+            this.limpar_funcionario.Location = new System.Drawing.Point(617, 483);
             this.limpar_funcionario.Name = "limpar_funcionario";
             this.limpar_funcionario.Size = new System.Drawing.Size(206, 69);
             this.limpar_funcionario.TabIndex = 92;
             this.limpar_funcionario.Text = "Limpar";
             this.limpar_funcionario.UseVisualStyleBackColor = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(617, 329);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(87, 19);
+            this.label4.TabIndex = 96;
+            this.label4.Text = "ID Cargo:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(616, 358);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(314, 20);
+            this.textBox1.TabIndex = 93;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.White;
+            this.pictureBox13.Location = new System.Drawing.Point(608, 343);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(341, 41);
+            this.pictureBox13.TabIndex = 94;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackColor = System.Drawing.Color.Black;
+            this.pictureBox14.Location = new System.Drawing.Point(600, 337);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(357, 53);
+            this.pictureBox14.TabIndex = 95;
+            this.pictureBox14.TabStop = false;
+            // 
             // funcionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1032, 575);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pictureBox13);
+            this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.limpar_funcionario);
             this.Controls.Add(this.genero_funcionario);
             this.Controls.Add(this.enviar_funcionario);
@@ -596,6 +644,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -645,5 +695,9 @@
         private Button enviar_funcionario;
         private ComboBox genero_funcionario;
         private Button limpar_funcionario;
+        private Label label4;
+        private TextBox textBox1;
+        private PictureBox pictureBox13;
+        private PictureBox pictureBox14;
     }
 }
