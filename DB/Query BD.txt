@@ -109,6 +109,35 @@ CREATE TABLE IF NOT EXISTS FormaPagamento   (
     PIX VARCHAR(45) NULL,
   PRIMARY KEY (  id_pagamento  ))
 
+CREATE TABLE IF NOT EXISTS Cliente_FormaPagemento(
+    fk_id_cliente INT NOT NULL,
+    fk_id_FormaPagamento INT NOT NULL,
+  CONSTRAINT   fk_Cliente_FormaPagemento_Cliente  
+    FOREIGN KEY (  fk_id_cliente  )
+    REFERENCES Cliente   (  id_cliente  ),
+  CONSTRAINT   fk_Cliente_FormaPagemento_FormaPagamento 
+    FOREIGN KEY (  fk_id_FormaPagamento  )
+    REFERENCES FormaPagamento   (  id_pagamento  ))
+
+CREATE TABLE IF NOT EXISTS Pedido_Servico   (
+    fk_id_pedido INT NOT NULL,
+    fk_id_servico INT NOT NULL,
+  PRIMARY KEY (  fk_id_pedido  ,   fk_id_servico  ),
+  CONSTRAINT   fk_Pedido_Servico_Pedido 
+    FOREIGN KEY (  fk_id_pedido  )
+    REFERENCES Pedido   (  id_pedido  ),
+  CONSTRAINT   fk_Pedido_Servico_Servico 
+    FOREIGN KEY (  fk_id_servico  )
+    REFERENCES Servico   (  id_servico  ))
+
+
+CREATE TABLE IF NOT EXISTS NotaFiscal   (
+    id_notaFiscal INT NOT NULL,
+    FormaPagamento_id_pagamento INT NOT NULL,
+  PRIMARY KEY (  id_notaFiscal  ),
+  CONSTRAINT   fk_NotaFiscal_FormaPagamento 
+    FOREIGN KEY (  FormaPagamento_id_pagamento  )
+    REFERENCES FormaPagamento   (  id_pagamento  ))
 
 
 
