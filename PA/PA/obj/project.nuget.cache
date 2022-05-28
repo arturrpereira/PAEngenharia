@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "JkQll0nAqTIiYutHq11Fm5r1O5D5tI7goALPaimNaRq4ELwdY1OBNbziGCWTwtHTQjIaXwk4Bz65a/kkz5UZVg==",
+  "success": true,
+  "projectFilePath": "E:\\Faculdade\\repos\\PAEngenharia\\PA\\PA\\PA.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\artuh\\.nuget\\packages\\npgsql\\6.0.4\\npgsql.6.0.4.nupkg.sha512",
+    "C:\\Users\\artuh\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
