@@ -8,23 +8,23 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\artuh\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Lucas Carmo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\repos\\PAEngenharia\\PA\\PA\\PA.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas Carmo\\source\\repos\\PA\\PAEngenharia\\PA\\PA\\PA.csproj",
       "projectName": "PA",
-      "projectPath": "E:\\repos\\PAEngenharia\\PA\\PA\\PA.csproj",
-      "packagesPath": "C:\\Users\\artuh\\.nuget\\packages\\",
-      "outputPath": "E:\\repos\\PAEngenharia\\PA\\PA\\obj\\",
+      "projectPath": "C:\\Users\\Lucas Carmo\\source\\repos\\PA\\PAEngenharia\\PA\\PA\\PA.csproj",
+      "packagesPath": "C:\\Users\\Lucas Carmo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lucas Carmo\\source\\repos\\PA\\PAEngenharia\\PA\\PA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\artuh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lucas Carmo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -68,7 +68,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
