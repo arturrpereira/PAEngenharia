@@ -20,15 +20,35 @@ namespace PA.Model
 
             dao.insert(this);
 
+            dao.update(this);
+        }
+        
+        public void select()
+        {
+            FuncionarioDAO dao = new FuncionarioDAO();
 
-           /* if (this.id_cargo == null)
+           // dao.(this);
+
+        }
+
+        /* public void selectById()
+        {
+            FuncionarioDAO dao = new FuncionarioDAO();
+
+            dao.insert(this);
+
+            /* if (this.id_funcionario == null)
             {
                 dao.insert(this);
             }
-            else
-            {
-                //dao.update(this);
-            }*/
+
+        }*/ 
+
+        public void delete()
+        {
+            CargoDAO dao = new CargoDAO();
+
+            dao.delete(this);
         }
     }
 }

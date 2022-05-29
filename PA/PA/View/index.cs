@@ -16,8 +16,6 @@ namespace PA.View
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
-
-
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
@@ -30,6 +28,9 @@ namespace PA.View
         public index()
         {
             InitializeComponent();
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         private void index_Load(object sender, EventArgs e)
@@ -42,21 +43,26 @@ namespace PA.View
                 this.Principal.Controls.RemoveAt(0);
             Form principal = form as Form;
             principal.TopLevel = false;
+            principal.FormBorderStyle = FormBorderStyle.None;
             principal.Dock = DockStyle.Fill;
             this.Principal.Controls.Add(principal);
             this.Principal.Tag = principal;
+            principal.BringToFront();
             principal.Show();
 
         }
+        
 
         private void btnCadPet_Click(object sender, EventArgs e)
         {
-
+            AbrirNOPrincipal(new CadastroCliente());
         }
 
         private void btnCadFunc_Click(object sender, EventArgs e)
         {
-            AbrirNOPrincipal(new funcionarios());
+            AbrirNOPrincipal(new FuncionarioView());
+
+           
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -72,12 +78,38 @@ namespace PA.View
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void BarraServico_Paint(object sender, PaintEventArgs e)
         {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //AbrirNOPrincipal(new CadastroPET());
+        }
+
+        private void labelhome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //AbrirNOPrincipal(new CargoView());
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMaximizar_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState=FormWindowState.Maximized;
         }
     }
 }

@@ -19,5 +19,17 @@ namespace PA.Controller
            
             model.save();
         }
+
+        public int verifyUser(string login_usuario, string senha_usuario)
+        {
+            Usuario model = new Usuario();
+
+            model.login_usuario = login_usuario;
+            model.senha_usuario = senha_usuario;
+
+            model.verifyUser();
+
+            return model.verifyUser();
+        }
     }
 }

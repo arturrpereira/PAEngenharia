@@ -1,7 +1,12 @@
 using PA.View;
 namespace PA
 {
-    internal static class Program
+    public static class Global
+    {
+        public static int id_usuario;
+        public static string login_usuario;
+    }
+    public static class Program
     {
         /// <summary>
         ///  The main entry point for the application.

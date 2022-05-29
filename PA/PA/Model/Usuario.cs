@@ -26,5 +26,14 @@ namespace PA.Model
             }*/
 
         }
+
+        public int verifyUser()
+        {
+            UsuarioDAO dao = new UsuarioDAO();
+
+            return dao.verifyUser(this);
+        }
+
+       
     }
 }

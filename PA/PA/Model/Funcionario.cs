@@ -22,6 +22,13 @@ namespace PA.Model
         public string telefone_funcionario;
         public int fk_id_cargo;
 
+        public List<Servico> servicos = new List<Servico>();
+
+        public Funcionario()
+        {
+            this.servicos = null;
+        }
+
         public void save()
         {
             FuncionarioDAO dao = new FuncionarioDAO();
@@ -34,5 +41,57 @@ namespace PA.Model
             }*/
 
         }
+
+        /*public void save()
+        {
+            FuncionarioDAO dao = new FuncionarioDAO();
+
+            dao.insert(this);
+
+            /* if (this.id_funcionario == null)
+            {
+                dao.insert(this);
+            }
+
+        }*/
+
+        /*public void save()
+        {
+            FuncionarioDAO dao = new FuncionarioDAO();
+
+            dao.insert(this);
+
+            /* if (this.id_funcionario == null)
+            {
+                dao.insert(this);
+            }
+
+        }*/
+
+        /*public void save()
+        {
+            FuncionarioDAO dao = new FuncionarioDAO();
+
+            dao.insert(this);
+
+            /* if (this.id_funcionario == null)
+            {
+                dao.insert(this);
+            }
+
+        }*/
+
+        /* public void save()
+        {
+            FuncionarioDAO dao = new FuncionarioDAO();
+
+            dao.insert(this);
+
+            /* if (this.id_funcionario == null)
+            {
+                dao.insert(this);
+            }
+
+        }*/
     }
 }

@@ -1,3 +1,6 @@
+using PA.Controller;
+using PA.View;
+
 namespace PA
 {
     public partial class login : Form
@@ -22,10 +25,10 @@ namespace PA
             btn_mostrar.Visible = false;
             pictureBox4.Visible = true;
 
-            if (txb_senha.PasswordChar == '*')
+            if (txb_user_senha.PasswordChar == '*')
             {
                 
-                txb_senha.PasswordChar = '\0';
+                txb_user_senha.PasswordChar = '\0';
             }
            
            
@@ -36,10 +39,10 @@ namespace PA
             btn_mostrar.Visible = true;
             pictureBox4.Visible = false;
 
-            if (txb_senha.PasswordChar == '\0')
+            if (txb_user_senha.PasswordChar == '\0')
             {
 
-                txb_senha.PasswordChar = '*';
+                txb_user_senha.PasswordChar = '*';
             }
             
 
@@ -53,17 +56,37 @@ namespace PA
 
         private void btn_mostrar_MouseDown(object sender, MouseEventArgs e)
         {
-            txb_senha.Show();
+            txb_user_senha.Show();
         }
 
         private void pictureBox4_MouseUp(object sender, MouseEventArgs e)
         {
-            txb_senha.Hide();
+            txb_user_senha.Hide();
         }
 
         private void btn_logar_Click(object sender, EventArgs e)
-        {            
+        {
+            string login = txb_user_login.Text;
+            string senha = txb_user_senha.Text;
 
+            UsuarioController controller = new UsuarioController();
+            var teste = new index();
+            teste.Show();
+            //this.Hide();
+
+            if (controller.verifyUser(login, senha) == 1)
+            {
+
+                MessageBox.Show("Usuário encontrado!");
+                
+                
+                
+
+            }
+            else
+            {
+                MessageBox.Show("Usuário não encontrado!");
+            }
         }
     }
 }

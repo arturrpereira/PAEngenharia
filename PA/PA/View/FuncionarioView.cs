@@ -11,9 +11,9 @@ using PA.Controller;
 
 namespace PA.View
 {
-    public partial class funcionarios : Form
+    public partial class FuncionarioView : Form
     {
-        public funcionarios()
+        public FuncionarioView()
         {
             InitializeComponent();
         }
@@ -61,7 +61,7 @@ namespace PA.View
         }
 
         private void enviar_funcionario_Click(object sender, EventArgs e)
-        {
+        {/*
             var nome_funcionario = txb_nome_funcionario.Text;
             var rg_funcionario = txb_rg_funcionario.Text;
             var cpf_funcionario = txb_cpf_funcionario.Text;
@@ -84,12 +84,57 @@ namespace PA.View
             catch (Exception)
             {
                 MessageBox.Show("ERRO: ");
-            }
+            }*/
         }
 
         private void txb_endereco_funcionario_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void funcionarios_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            txb_nome_funcionario.Enabled = true;
+            txb_rg_funcionario.Enabled = true;
+            txb_cpf_funcionario.Enabled = true;
+            cob_genero_funcionario.Enabled = true;
+            txb_datanasc_funcionario.Enabled = true;
+            txb_dataadmi_funcionario.Enabled = true;
+            txb_endereco_funcionario.Enabled = true;
+            txb_numero_residencia.Enabled = true;
+            txb_bairro_funcionario.Enabled = true;
+            txb_telefone_funcionario.Enabled = true;
+           
+        
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void enviar_funcionario_Click_1(object sender, EventArgs e)
+        {
+            /* var nome_funcionario = txb_nome_funcionario.Enabled = true;
+            var rg_funcionario txb_rg_funcionario.Enabled = true;
+            var nome_funcionario txb_cpf_funcionario.Enabled = true;
+            var nome_funcionario cob_genero_funcionario.Enabled = true;
+            var nome_funcionario txb_datanasc_funcionario.Enabled = true;
+            var nome_funcionariotxb_dataadmi_funcionario.Enabled = true;
+            var nome_funcionariotxb_endereco_funcionario.Enabled = true;
+            var nome_funcionariotxb_numero_residencia.Enabled = true;
+            var nome_funcionariotxb_bairro_funcionario.Enabled = true;
+            var nome_funcionariotxb_telefone_funcionario.Enabled = true;*/
         }
     }
 }

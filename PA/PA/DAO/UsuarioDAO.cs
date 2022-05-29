@@ -77,5 +77,29 @@ namespace PA.DAO
 
             ConnectionDB.CRUD(command);
         }
+
+        public int verifyUser(Usuario model)
+        {
+            NpgsqlCommand command = new NpgsqlCommand();
+            command.CommandType = System.Data.CommandType.Text;
+            command.CommandText = "SELECT * FROM Usuario WHERE login_usuario=@login_usuario AND senha_usuario=@senha_usuario";
+
+            command.Parameters.AddWithValue("@login_usuario", Convert.ToString(model.login_usuario));
+            command.Parameters.AddWithValue("@senha_usuario", Convert.ToString(model.senha_usuario));
+
+            NpgsqlDataReader dr = ConnectionDB.Select(command);
+
+            if (dr.HasRows)
+            {
+                dr.Read();
+                Global.id_usuario = (int)dr["id_usuario"];
+                Global.login_usuario = (string)dr["login_usuario"];
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
     }
 }
